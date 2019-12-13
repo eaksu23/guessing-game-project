@@ -1,5 +1,5 @@
-README.md:guessinggame.sh
+README.md:guessinggame.sh makefile
 	echo "Guessing Game Project<br/>" > README.md
 	date >> README.md
 	echo "<br/>" >> README.md
-	cat guessinggame.sh | wc -l >> README.md
+	cat guessinggame.sh | grep ^[^#] | wc -l >> README.md
